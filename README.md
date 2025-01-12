@@ -85,7 +85,7 @@ Mobile Compatibility: Ensure full mobile responsiveness and optimize the UI for 
 
 Project prototype (UI/UX) - [Link](https://tinyurl.com/Prototype-Eco-Fortune) 🚀!
 
-## [Usage of Wolfram Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Wolfram%20-%20Expense%20Tracker%20ans%20EMI%20calculator/README.md)
+## [Usage of Wolfram Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Wolfram%20-%20Expense%20Tracker%20ans%20EMI%20calculator/README.md) 🚀
 ### Expense Tracker Flow
 **Input:** User adds expense details.
 
@@ -113,7 +113,7 @@ Project prototype (UI/UX) - [Link](https://tinyurl.com/Prototype-Eco-Fortune) �
 - EMI details (monthly payment, total interest, total repayment).
 - Recommendations to improve financial health.
 
-## [Usage of Avalanche](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Green%20Portfolio%20-%20Avalanche/README.md)
+## [Usage of Avalanche](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Green%20Portfolio%20-%20Avalanche/README.md) 🚀
 Green Portfolio Flow
 **Input:** User opens the portfolio dashboard.
 
@@ -129,10 +129,10 @@ Green Portfolio Flow
 - Updated portfolio.
 - Transaction confirmation.
 
-## [Usage of Groclake Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Plotch_ai/README.md)
+## [Usage of Groclake Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Plotch_ai/README.md) 🚀
 Assistant Flow
 
-**Input: **User interacts with the chatbot.
+**Input:** User interacts with the chatbot.
 
 **Process:**
 1. User asks a query (e.g., “How do I invest in stocks?”).
