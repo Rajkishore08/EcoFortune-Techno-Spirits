@@ -5,7 +5,7 @@ const networkID = 1; // Mainnet = 1, Fuji Testnet = 5
 const avalanche = new Avalanche("api.avax.network", 443, "https");
 const avm = avalanche.XChain(); // AVM for transactions
 const keyChain = avm.keyChain();
-keyChain.importKey("0x8cf1c2e6ab231125ef5f7b42032bc787f6ceedfc0778df483e95e9fd6e575cb8"); // Replace with your private key
+keyChain.importKey(""); // Replace with private key
 const address = keyChain.getAddressStrings()[0];
 
 // Function to fetch balance
