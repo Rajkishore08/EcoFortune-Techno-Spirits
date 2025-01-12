@@ -69,7 +69,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For questions, suggestions, or support, reach out to us:
-- Email: support@ecofortune.com
+- Email: [rajkishorerk082004@gmail.com](rajkishorerk082004@gmail.com)
 - Website: [EcoFortune](https://tinyurl.com/Eco-Fortune)
 
 ---
