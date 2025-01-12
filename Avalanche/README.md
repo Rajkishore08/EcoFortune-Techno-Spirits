@@ -19,11 +19,11 @@ To get started with the Avalanche project, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Rajkishore08/EcoFortune-Techno-Spirits.git
     ```
 2. **Navigate to the project directory**:
     ```bash
-    cd /home/dharanesh/Documents/CIT/Events/Hackverse 5.0/EcoFortune-Techno-Spirits/Avalanche
+    cd EcoFortune-Techno-Spirits/Avalanche
     ```
 3. **Install dependencies for the client**:
     ```bash
@@ -35,4 +35,25 @@ To get started with the Avalanche project, follow these steps:
     cd ../server
     npm install
     ```
+5. **Run both client and server**:
+    ```bash
+    cd ..
+    npm run dev
+    ```
+
+## Dependencies
+
+### Client (React)
+- React
+- React Router
+- Axios
+- Redux
+
+### Server (Node.js)
+- Express
+- Mongoose
+- Nodemon
+- Cors
+- Dotenv
+- Axios
 
