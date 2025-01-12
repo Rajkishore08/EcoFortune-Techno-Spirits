@@ -23,6 +23,5 @@ Eco Fortune combines financial growth with environmental responsibility. The cha
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/yourusername/eco-fortune-chatbot.git  
-   cd eco-fortune-chatbot  
-```
+   git clone https://github.com/Rajkishore08/EcoFortune-Techno-Spirits.git  
+   cd eco-fortune-chatbot  ```
