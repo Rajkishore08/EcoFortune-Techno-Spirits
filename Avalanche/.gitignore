@@ -17,4 +17,4 @@ build/
 Thumbs.db
 
 # Ignore environment variable files
-.env
+# .env
