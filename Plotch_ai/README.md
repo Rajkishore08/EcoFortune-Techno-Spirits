@@ -25,3 +25,38 @@ Eco Fortune combines financial growth with environmental responsibility. The cha
    ```bash  
    git clone https://github.com/Rajkishore08/EcoFortune-Techno-Spirits.git  
    cd eco-fortune-chatbot  ```
+2. Install the required dependencies:
+```bash
+Copy code
+pip install -r requirements.txt
+```
+3. Running the Chatbot
+Open the project folder and start the backend:
+```bash
+python backend.py  
+```
+4. Open a split terminal, navigate to the frontend directory, and run:
+```bash
+streamlit run frontend.py  
+```
+5. Access the application in your browser at:
+```bash
+http://localhost:8501/  
+```
+Training Data :
+The chatbot has been trained using a comprehensive document that provides insights into sustainable finance.
+You can access the training document here: https://drive.google.com/file/d/1Ghe-Tftqk7d4qe0cNsyhS7OpzuP0gK9H/view?usp=sharing
+
+Folder Structure
+```bash
+Plotch_ai/  
+├── backend.py          # Backend logic for handling queries  
+├── frontend.py         # Streamlit app for user interface  
+├── requirements.txt    # Dependencies for the project  
+├── static/ logo.png    # Additional resources  
+└── README.md           # Project documentation  
+```
+Future Enhancements
+- Integrate advanced NLP models for more accurate responses.
+- Expand the dataset to include more topics on sustainable finance.
+- Add voice input and output capabilities.
