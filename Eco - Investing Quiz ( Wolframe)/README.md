@@ -31,7 +31,7 @@ EcoFortune is deployed for easy access, ensuring a reliable and scalable experie
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd eco-fortune
+   cd Eco-Investing Quiz (Wolframe)
    ```
 3. **Install Dependencies**:
    ```bash
