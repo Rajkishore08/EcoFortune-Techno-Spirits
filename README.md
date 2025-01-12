@@ -85,3 +85,50 @@ Mobile Compatibility: Ensure full mobile responsiveness and optimize the UI for 
 
 Project prototype (UI/UX) - [Link](https://tinyurl.com/Prototype-Eco-Fortune) 🚀!
 
+## [Usage of Wolfram Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Wolfram%20-%20Expense%20Tracker%20ans%20EMI%20calculator/README.md)
+### Expense Tracker Flow
+**Input:** User adds expense details.
+**Process:**
+1. User selects a category (e.g., food, transportation) and enters the amount.
+2. Save data in the database.
+3. Generate insights using Wolfram API:
+    - Spending trends over time.
+    - Suggestions for savings.
+4. Visualize data (e.g., bar charts, pie charts).
+**Output:**
+- Visual insights.
+- Notifications for high spending or potential savings.
+
+### EMI Calculator Flow
+**Input:** User provides loan parameters (e.g., loan amount, tenure, interest rate).
+**Process:**
+1. Perform EMI calculations using Wolfram API.
+2. Incorporate user income and expense data from the Expense Tracker to suggest affordable EMIs.
+3. Provide financial insights like debt-to-income ratio and savings tips.
+**Output:**
+- EMI details (monthly payment, total interest, total repayment).
+- Recommendations to improve financial health.
+
+## [Usage of Avalanche](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Green%20Portfolio%20-%20Avalanche/README.md)
+Green Portfolio Flow
+**Input:** User opens the portfolio dashboard.
+**Process:**
+1. Fetch real-time cryptocurrency/token prices using Alpha Vantage API.
+2. Display portfolio performance (e.g., pie charts, growth trends).
+3. User initiates a buy/sell transaction.
+    - Validate transaction details.
+    - Process the transaction using Avalanche API.
+4. Update portfolio in the database.
+
+**Output:**
+- Updated portfolio.
+- Transaction confirmation.
+
+## [Usage of Groclake Technology](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits/blob/main/Plotch_ai/README.md)
+Assistant Flow
+Input: User interacts with the chatbot.
+Process:
+User asks a query (e.g., “How do I invest in stocks?”).
+The chatbot processes the query using the Groclake API.
+Provides general knowledge or personalized advice based on quiz results.
+Output: Display text responses, suggestions, or links to app modules.
