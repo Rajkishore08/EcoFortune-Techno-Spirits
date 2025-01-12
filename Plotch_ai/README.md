@@ -46,6 +46,9 @@ http://localhost:8501/
 ```
 ![chat bot 1](https://github.com/user-attachments/assets/3f1f1b44-7739-4d92-a254-9be25939b5e3)
 
+![chat bot 2](https://github.com/user-attachments/assets/2facffe7-93f0-452a-9277-71f9448bfd23)
+
+
 Training Data :
 The chatbot has been trained using a comprehensive document that provides insights into sustainable finance.
 You can access the training document here: https://drive.google.com/file/d/1Ghe-Tftqk7d4qe0cNsyhS7OpzuP0gK9H/view?usp=sharing
