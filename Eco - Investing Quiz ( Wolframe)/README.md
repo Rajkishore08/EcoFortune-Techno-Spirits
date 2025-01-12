@@ -50,8 +50,10 @@ EcoFortune is deployed for easy access, ensuring a reliable and scalable experie
    ```
 6. **Access the Application**:
    Visit `http://localhost:your_port` in your browser.
+
 ![quiz1](https://github.com/user-attachments/assets/1b01a535-126d-440c-bf3a-adffa34ec8a5)
 ![quiz2](https://github.com/user-attachments/assets/acf6e1b4-b8ef-4587-9dee-a86e82f001f1)
+![quiz3](https://github.com/user-attachments/assets/91dc73ad-2777-42f2-af37-b6305e354655)
 
 
 ## Contribution
