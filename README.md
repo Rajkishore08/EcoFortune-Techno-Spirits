@@ -1,6 +1,6 @@
 # EcoFortune
 
-EcoFortune is a financial platform that encourages eco-conscious financial tools and green investments. It provides users with personalized insights into sustainable investment opportunities, helping them build wealth on a green foundation. Built with a tech stack of React.js, Node.js, PostgreSQL, and Docker, *EcoFortune* leverages machine learning for investment predictions and integrates blockchain for secure financial transactions.
+EcoFortune is a financial platform that encourages eco-conscious financial tools and green investments. It provides users with personalized insights into sustainable investment opportunities, helping them build wealth on a green foundation. Built with a tech stack of React.js, Node.js and MongoDB. *EcoFortune* leverages machine learning for investment predictions and integrates blockchain for secure financial transactions.
 
 ---
 ### Project prototype (UI/UX) - [Link](https://tinyurl.com/Prototype-Eco-Fortune) 🚀!
