@@ -27,7 +27,7 @@ EcoFortune is deployed for easy access, ensuring a reliable and scalable experie
 ## Installation and Setup (For Developers)
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/eco-fortune.git
+   git clone https://github.com/Rajkishore08/EcoFortune-Techno-Spirits
    ```
 2. **Navigate to the Project Directory**:
    ```bash
