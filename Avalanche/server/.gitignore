@@ -13,7 +13,7 @@ yarn-lock.json
 package-lock.json
 
 # Environment variables
-.env
+# .env
 
 # Editor and IDE related
 .idea
