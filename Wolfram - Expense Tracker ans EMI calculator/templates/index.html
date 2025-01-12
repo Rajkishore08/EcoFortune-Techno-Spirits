@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wolfram API Demo</title>
+    <style>
+        body { font-family: sans-serif; }
+        #results-container { margin-top: 20px; }
+        .result-pod { border: 1px solid #ccc; margin-bottom: 10px; padding: 10px; }
+        .pod-title { font-weight: bold; margin-bottom: 5px; }
+        .prediction-section { margin-top: 30px; }
+        textarea { width: 300px; height: 80px; }
+        .prediction-results { margin-top: 10px; }
+        .emi-input { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Ask Wolfram Alpha</h1>
+    <form id="query-form">
+        <input type="text" id="query-input" name="query" placeholder="Enter your query" style="width: 300px;">
+        <button type="submit">Ask</button>
+    </form>
+
+    <div id="results-container"></div>
+
+    <div class="prediction-section">
+        <h2>Predict Future Expenses</h2>
+        <p>Enter your past expenses (one per line, format: category,amount,YYYY-MM-DD):</p>
+        <textarea id="expenses-input" placeholder="e.g., food,50,2023-10-26"></textarea>
+        <button id="predict-expenses-button">Predict Expenses</button>
+        <div id="expense-predictions" class="prediction-results"></div>
+    </div>
+
+    <div class="prediction-section">
+        <h2>Predict EMI Change</h2>
+        <div class="emi-input">
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="number" id="loan-amount" placeholder="e.g., 10000">
+        </div>
+        <div class="emi-input">
+            <label for="interest-rate">Current Interest Rate (%):</label>
+            <input type="number" id="interest-rate" placeholder="e.g., 5">
+        </div>
+        <div class="emi-input">
+            <label for="loan-tenure">Loan Tenure (years):</label>
+            <input type="number" id="loan-tenure" placeholder="e.g., 5">
+        </div>
+        <div class="emi-input">
+            <label for="future-interest-rate">Future Interest Rate (%):</label>
+            <input type="number" id="future-interest-rate" placeholder="e.g., 6">
+        </div>
+        <button id="predict-emi-button">Predict EMI</button>
+        <div id="emi-predictions" class="prediction-results"></div>
+    </div>
+
+    <script>
+        document.getElementById('query-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('query-input').value;
+
+            fetch('/query', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'query=' + encodeURIComponent(query),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsContainer = document.getElementById('results-container');
+                resultsContainer.innerHTML = '';
+
+                if (data.results) {
+                    data.results.forEach(result => {
+                        const podDiv = document.createElement('div');
+                        podDiv.classList.add('result-pod');
+
+                        const titleDiv = document.createElement('div');
+                        titleDiv.classList.add('pod-title');
+                        titleDiv.textContent = result.title;
+                        podDiv.appendChild(titleDiv);
+
+                        const textDiv = document.createElement('div');
+                        textDiv.textContent = result.text;
+                        podDiv.appendChild(textDiv);
+
+                        resultsContainer.appendChild(podDiv);
+                    });
+                } else if (data.error) {
+                    const errorDiv = document.createElement('div');
+                    errorDiv.textContent = 'Error: ' + data.error;
+                    resultsContainer.appendChild(errorDiv);
+                }
+            });
+        });
+
+        document.getElementById('predict-expenses-button').addEventListener('click', function() {
+            const expensesInput = document.getElementById('expenses-input').value;
+            const expenses = expensesInput.split('\n').map(line => {
+                const parts = line.trim().split(',');
+                if (parts.length === 3) {
+                    return { category: parts[0], amount: parseFloat(parts[1]), date: parts[2] };
+                }
+                return null;
+            }).filter(item => item);
+
+            fetch('/predict_expenses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(expenses),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const predictionsContainer = document.getElementById('expense-predictions');
+                predictionsContainer.innerHTML = '';
+                if (data.predictions) {
+                    data.predictions.forEach(prediction => {
+                        const predDiv = document.createElement('div');
+                        predDiv.innerHTML = `<strong>${prediction.title}:</strong> ${prediction.text}`;
+                        predictionsContainer.appendChild(predDiv);
+                    });
+                } else if (data.error) {
+                    predictionsContainer.textContent = 'Error: ' + data.error;
+                } else if (data.info) {
+                    predictionsContainer.textContent = data.info;
+                }
+            });
+        });
+
+        document.getElementById('predict-emi-button').addEventListener('click', function() {
+            const loanAmount = document.getElementById('loan-amount').value;
+            const interestRate = document.getElementById('interest-rate').value;
+            const loanTenure = document.getElementById('loan-tenure').value;
+            const futureInterestRate = document.getElementById('future-interest-rate').value;
+
+            fetch('/predict_emi', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    loan_amount: loanAmount,
+                    interest_rate: interestRate,
+                    loan_tenure: loanTenure,
+                    future_interest_rate: futureInterestRate
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const emiPredictionsContainer = document.getElementById('emi-predictions');
+                emiPredictionsContainer.innerHTML = '';
+                if (data.emi_predictions) {
+                    data.emi_predictions.forEach(prediction => {
+                        const predDiv = document.createElement('div');
+                        predDiv.innerHTML = `<strong>${prediction.title}:</strong> ${prediction.text}`;
+                        emiPredictionsContainer.appendChild(predDiv);
+                    });
+                } else if (data.error) {
+                    emiPredictionsContainer.textContent = 'Error: ' + data.error;
+                } else if (data.info) {
+                    emiPredictionsContainer.textContent = data.info;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
