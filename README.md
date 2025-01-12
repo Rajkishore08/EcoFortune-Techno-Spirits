@@ -31,7 +31,7 @@ EcoFortune is a financial platform that encourages eco-conscious financial tools
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/EcoFortune.git
+git clone [https://github.com/yourusername/EcoFortune.git](https://github.com/Rajkishore08/EcoFortune-Techno-Spirits)
 cd EcoFortune
 ```
 
