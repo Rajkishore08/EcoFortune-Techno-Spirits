@@ -35,6 +35,50 @@ git clone https://github.com/yourusername/EcoFortune.git
 cd EcoFortune
 ```
 
+Frontend Setup
+Navigate to the frontend directory.
+Install dependencies:
+```bash
+cd frontend
+npm install
+```
+Start the frontend development server:
+```bash
+npm start
+```
+Backend Setup
+Navigate to the backend directory.
+Install dependencies:
+```bash
+cd backend
+npm install
+```
+Start the backend server:
+```bash
+npm start
+```
+Sourcing and integrating real-time data on sustainable investments and green projects was challenging due to varying data formats.
+Solution: We researched multiple APIs and built custom integration scripts to fetch and display the data.
+[https://drive.google.com/file/d/1Ghe-Tftqk7d4qe0cNsyhS7OpzuP0gK9H/view?usp=sharing](https://drive.google.com/file/d/1Ghe-Tftqk7d4qe0cNsyhS7OpzuP0gK9H/view?usp=sharing)
+
+UI/UX Optimization for Eco-Conscious Themes:
+
+The initial design felt cluttered and didn’t fully capture the clean, nature-based concept.
+Solution: We refined the UI by incorporating natural, earthy tones and minimalist design principles.
+
+Integrating Plotch.ai for Investment Insights:
+
+Fine-tuning the Plotch.ai model for personalized investment insights was challenging.
+Solution: With help from Ayuh Mital sir, we refined the model and adjusted the data preprocessing to improve its accuracy.
+Integrating Avalanche and Wolfram:
+
+Integration of Avalanche and Wolfram caused errors, particularly due to compatibility issues.
+Solution: We broke down the process into smaller steps and consulted documentation and online communities to resolve the issues.
+Future Enhancements
+Expand Investment Data Sources: Integrate additional APIs to provide more comprehensive investment options.
+AI-Powered Investment Advisor: Improve the Plotch.ai model to provide even more personalized recommendations.
+Mobile Compatibility: Ensure full mobile responsiveness and optimize the UI for smaller screens.
+
 ![1](https://github.com/user-attachments/assets/2d066423-86c8-43c2-bf2a-fa1fc42132f3)
 ![2](https://github.com/user-attachments/assets/5b703782-2b09-4195-8d4c-697f0f3d56b5)
 ![3](https://github.com/user-attachments/assets/7bb3c984-534f-4013-9f32-aebf767bc874)
